@@ -30,6 +30,36 @@ body{
     text-align: justify;
 }
 
+.section-heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family: "Italianno",cursive;
+
+}
+
+.section-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn{
+    background-color: rgb(230, 159, .8);
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.text-white{
+    color: #fff;
+}
+
 
 
 /* reset code and common code End here */
@@ -122,6 +152,52 @@ nav li:hover{
 
 /* banner ends here */
 
+/* about section start here */
+#blog-about{
+    min-height: 95vh;
+    padding: 5rem 1rem;
+    background-color: #4c4c4c;
+  
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+}
+.card{
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: #a09d9d;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-header{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card-description{
+    padding: 0.4rem 0;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+.card-btn{
+    align-self: center;
+    width: 80%;
+
+}
+/* about section ends here */
+
 
 /* responsive start here */
 @media (max-width: 992px){
@@ -136,6 +212,14 @@ nav li:hover{
         margin-bottom: 5rem;
     }
 
+    .card-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       flex-wrap: wrap;
+    }
+
 }
 
 @media (max-width: 768px){
@@ -144,6 +228,11 @@ nav li:hover{
     }
     #blog-banner-section article{
         width: 80%;
+    }
+
+    .card-container{
+        width: 80%;
+      
     }
     
 }
@@ -174,6 +263,20 @@ nav li:hover{
 
     #blog-banner-section article{
         width: 95% ;
+    }
+    .banner-img{
+        max-width: 100%;
+    }
+    #blog-about{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-container{
+        width: 90%;
+
     }
     
 }
