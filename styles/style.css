@@ -157,8 +157,6 @@ nav li:hover{
 
 /* about section start here */
 #blog-about{
-    min-height: 95vh;
-    padding: 5rem 1rem;
     background-color: #4c4c4c;
   
 }
@@ -202,10 +200,7 @@ nav li:hover{
 /* about section ends here */
 
 /* archives section start here */
-#archives{
-    padding : 5rem ;
-    min-height: 95vh;
-}
+
 
 .archives-container{
     display: flex;
@@ -294,10 +289,78 @@ nav li:hover{
 /* blog post end here */
 
 /* contact section start here */
+#contact-section{
+    background-color: #4c4c4c;
+    min-height: 90vh;
+}
+#contact-form{
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222 , -0.1rem 0 0.1rem #222;
+    margin: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3rem;
+}
+input , textarea{
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+}
+.form-btn-field{
+    display: flex;
+    justify-content: end;
+}
+.contact-btn{
+    width: 30%;
+
+}
+
 
 /* contact section end here */
 
+/* footer section start here  */
+footer{
+    background-color: #222;
+    padding: 1rem;
+    color: #fff;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+
+}
+
+.copyright-text{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-icon{
+    font-size: 2.5rem;
+}
+
+
+/* footer section ends here */
 
 
 
@@ -345,6 +408,9 @@ nav li:hover{
         flex-direction: column;
         margin-bottom: 3rem;
         width: 80%;
+    }
+    #contact-section{
+        min-height: auto;
     }
     
 }
@@ -398,7 +464,22 @@ nav li:hover{
         margin-bottom: 3rem;
         width: 90%;
     }
-    
+    #contact-form{
+        width: 90%;
+    }
+    .form-control{
+        flex-direction: column;
+    }
+    .form-control label{
+        margin-bottom: 0.5rem;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    #menubar2{
+        display: flex;
+    }
 }
 
 @media (max-width: 400px){
